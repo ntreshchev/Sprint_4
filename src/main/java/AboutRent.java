@@ -20,7 +20,7 @@ public class AboutRent {
     // Форма данных по аренде, когда привезти самокат
     private By commentField = By.xpath(".//input[@placeholder='Комментарий для курьера']");
     // кнопка "Заказать"
-    private By orderButtonInForm = By.xpath("html/body/div/div/div[2]/div[3]/button[2][@class='Button_Button__ra12g Button_Middle__1CSJM' and text()='Заказать']");
+    private By orderButtonInForm = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM' and text()='Заказать']");
 
     public AboutRent(WebDriver driver) {
         this.driver = driver;

@@ -18,64 +18,64 @@ public class TestAccordion {
     public void checkHowAccordionOneWorks() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        Accordion ObjAccordion = new Accordion(driver);
-        ObjAccordion.checkAccordionOneIsWorking();
+        Accordion objAccordion = new Accordion(driver);
+        objAccordion.checkAccordionOneIsWorking();
     }
 
     @Test
     public void checkHowAccordionTwoWorks() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        Accordion ObjAccordion = new Accordion(driver);
-        ObjAccordion.checkAccordionTwoIsWorking();
+        Accordion objAccordion = new Accordion(driver);
+        objAccordion.checkAccordionTwoIsWorking();
     }
 
     @Test
     public void checkHowAccordionThreeWorks() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        Accordion ObjAccordion = new Accordion(driver);
-        ObjAccordion.checkAccordionThreeIsWorking();
+        Accordion objAccordion = new Accordion(driver);
+        objAccordion.checkAccordionThreeIsWorking();
     }
 
     @Test
     public void checkHowAccordionFourWorks() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        Accordion ObjAccordion = new Accordion(driver);
-        ObjAccordion.checkAccordionFourIsWorking();
+        Accordion objAccordion = new Accordion(driver);
+        objAccordion.checkAccordionFourIsWorking();
     }
 
     @Test
     public void checkHowAccordionFiveWorks() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        Accordion ObjAccordion = new Accordion(driver);
-        ObjAccordion.checkAccordionFiveIsWorking();
+        Accordion objAccordion = new Accordion(driver);
+        objAccordion.checkAccordionFiveIsWorking();
     }
 
     @Test
     public void checkHowAccordionSixWorks() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        Accordion ObjAccordion = new Accordion(driver);
-        ObjAccordion.checkAccordionSixIsWorking();
+        Accordion objAccordion = new Accordion(driver);
+        objAccordion.checkAccordionSixIsWorking();
     }
 
     @Test
     public void checkHowAccordionSevenWorks() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        Accordion ObjAccordion = new Accordion(driver);
-        ObjAccordion.checkAccordionSevenIsWorking();
+        Accordion objAccordion = new Accordion(driver);
+        objAccordion.checkAccordionSevenIsWorking();
     }
 
     @Test
     public void checkHowAccordionEightWorks() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        Accordion ObjAccordion = new Accordion(driver);
-        ObjAccordion.checkAccordionEightIsWorking();
+        Accordion objAccordion = new Accordion(driver);
+        objAccordion.checkAccordionEightIsWorking();
     }
 
     @AfterAll

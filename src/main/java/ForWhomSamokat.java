@@ -10,7 +10,7 @@ public class ForWhomSamokat {
     private WebDriver driver;
 
     //Заголовок "Для кого самокат"
-    private By forWhomSamokatHeader = By.xpath("html/body/div/div/div[2]/div[1][text()='Для кого самокат']");
+    private By forWhomSamokatHeader = By.xpath(".//div[text()='Для кого самокат']");
     //Форма для кого, имя
     private By nameField = By.xpath(".//input[@placeholder='* Имя']");
     //Форма для кого, фамилия

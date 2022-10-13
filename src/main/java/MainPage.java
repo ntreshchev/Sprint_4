@@ -1,16 +1,19 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class MainPage {
 
     private WebDriver driver;
 
     //Кнопка согласия с куками
-    private By cookiesOkayButton = By.className("App_CookieButton__3cvqF");
+   private By cookiesOkayButton = By.className("App_CookieButton__3cvqF");
+
     //Кнопка "Заказать" сверху
-    private By orderUpButton = By.xpath("html/body/div/div/div/div[1]/div[2]/button[1][@class='Button_Button__ra12g' and text()='Заказать']");
+    private By orderUpButton = By.xpath(".//button[@class='Button_Button__ra12g' and text()='Заказать']");
     //Кнопка "Заказать" в середине страницы
-    private By orderMiddleButton = By.xpath("html/body/div/div/div/div[4]/div[2]/div[5]/button[@class='Button_Button__ra12g Button_Middle__1CSJM' and text()='Заказать']");
+    private By orderMiddleButton = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM' and text()='Заказать']");
     public MainPage(WebDriver driver) {
         this.driver = driver;
     }

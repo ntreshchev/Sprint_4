@@ -26,7 +26,7 @@ public class TestOrderMiddleButton {
         this.testComment = testComment;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0} {1}")
     public static Object[][] getOrderDetails() {
         return new Object[][]{
                 {"Иван", "Иванов", "Ленинский проспект, 6", "+79001234567", "Привезите в ближайшие три часа"},
@@ -44,32 +44,32 @@ public class TestOrderMiddleButton {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
 
-        MainPage ObjMainPage = new MainPage(driver);
+        MainPage objMainPage = new MainPage(driver);
         //Нажимаем на верхнюю кнопку
-        ObjMainPage.clickButtonCookiesOkay();
-        ObjMainPage.clickButtonOrderMiddleActive();
+        objMainPage.clickButtonCookiesOkay();
+        objMainPage.clickButtonOrderMiddleActive();
 
-        ForWhomSamokat ObjForWhomSamokat = new ForWhomSamokat(driver);
+        ForWhomSamokat objForWhomSamokat = new ForWhomSamokat(driver);
         //Заполняем форму "Для кого самокат"
-        ObjForWhomSamokat.fillInForWhomSamokatForm(testName, testSurname, testAdress, testPhoneNumber);
+        objForWhomSamokat.fillInForWhomSamokatForm(testName, testSurname, testAdress, testPhoneNumber);
 
-        AboutRent ObjAboutRent = new AboutRent(driver);
+        AboutRent objAboutRent = new AboutRent(driver);
         //Заполняем форму "Об аренде"
-        ObjAboutRent.fillAboutRentFormOptionOne(testComment);
+        objAboutRent.fillAboutRentFormOptionOne(testComment);
 
-        WantToOrder ObjWantToOrder = new WantToOrder(driver);
+        WantToOrder objWantToOrder = new WantToOrder(driver);
         //Подтверждаем бронирование
-        ObjWantToOrder.clickWantToOrderWIndow();
+        objWantToOrder.clickWantToOrderWIndow();
 
-        OrderIsProcessed ObjOrderIsProcessed = new OrderIsProcessed(driver);
+        OrderIsProcessed objOrderIsProcessed = new OrderIsProcessed(driver);
         //Нажимаем "Посмотреть статус"
-        ObjOrderIsProcessed.clickOrderIsProcessedWIndow();
+        objOrderIsProcessed.clickOrderIsProcessedWIndow();
 
-        OrderTracking ObjOrderTracking = new OrderTracking(driver);
+        OrderTracking objOrderTracking = new OrderTracking(driver);
         //Убеждаемся, что страница заказа грузится
-        ObjOrderTracking.checkIsOrderTrackingPageLoaded();
+        objOrderTracking.checkIsOrderTrackingPageLoaded();
 
-        assertEquals(true, ObjOrderTracking.checkIsOrderTrackingPageLoaded());
+        assertEquals(true, objOrderTracking.checkIsOrderTrackingPageLoaded());
     }
 
     @After

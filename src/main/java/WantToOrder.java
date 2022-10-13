@@ -7,9 +7,9 @@ public class WantToOrder {
     private WebDriver driver;
 
     //Заголовок "Хотите оформить заказ?"
-    private By WantToOrderHeader = By.xpath(".//div[text()='Хотите оформить заказ?']");
+    private By wantToOrderHeader = By.xpath(".//div[text()='Хотите оформить заказ?']");
     // Кнопка "Да"
-    private By YesButton = By.xpath(".//button[text()='Да']");
+    private By yesButton = By.xpath(".//button[text()='Да']");
 
     public WantToOrder(WebDriver driver){
         this.driver = driver;
@@ -17,11 +17,11 @@ public class WantToOrder {
     //Ждем, когда загрузится страница
     public void waitForLoadWantToOrder() {
         new WebDriverWait(driver, 5)
-                .until(ExpectedConditions.visibilityOfElementLocated(WantToOrderHeader));
+                .until(ExpectedConditions.visibilityOfElementLocated(wantToOrderHeader));
     }
     //Нажимаем кнопку "Да"
     public void clickButtonYes(){
-        driver.findElement(YesButton).click();
+        driver.findElement(yesButton).click();
     }
     //Нажимаем кнопку после загрузки страницы
     public void clickWantToOrderWIndow(){
